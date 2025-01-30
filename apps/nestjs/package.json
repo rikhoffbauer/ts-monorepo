@@ -10,20 +10,20 @@
     "start:dev": "nest start --watch"
   },
   "dependencies": {
-    "@nestjs/common": "~9.3.0",
-    "@nestjs/core": "~9.3.0",
-    "@nestjs/platform-express": "~9.3.0",
-    "@nighttrax/foo": "*",
-    "reflect-metadata": "~0.1.13",
-    "rimraf": "~4.4.0",
+    "@nestjs/common": "~11.0.0",
+    "@nestjs/core": "~11.0.0",
+    "@nestjs/platform-express": "~11.0.0",
+    "@nighttrax/foo": "workspace:*",
+    "reflect-metadata": "~0.2.2",
+    "rimraf": "~6.0.0",
     "rxjs": "~7.8.0"
   },
   "devDependencies": {
-    "@nestjs/cli": "~9.3.0",
+    "@nestjs/cli": "~10.4.0",
     "@types/express": "~4.17.11",
-    "@types/node": "~18.15.0",
+    "@types/node": "~22.10.0",
     "ts-node": "~10.9.0",
-    "tsconfig-paths": "~4.1.0",
+    "tsconfig-paths": "~4.2.0",
     "typescript": "~4.9.0"
   }
 }

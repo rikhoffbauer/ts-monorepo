@@ -1,13 +1,20 @@
-import type { StorybookConfig } from "@storybook/core-common";
-// eslint-disable-next-line import/no-extraneous-dependencies
+import { StorybookConfig } from "@storybook/react-webpack5";
+import assert from "node:assert";
 import { TsconfigPathsPlugin } from "tsconfig-paths-webpack-plugin";
 
 const config: StorybookConfig = {
   stories: ["../src/*.stories.tsx"],
   addons: [],
-  framework: "@storybook/react",
-  core: { builder: "webpack5" },
+  framework: {
+    name: "@storybook/react-webpack5",
+    options: {},
+  },
+  typescript: {
+    check: true,
+  },
   webpackFinal: async (config) => {
+    assert(config.resolve, "Can't extend the Storybook config");
+
     // eslint-disable-next-line no-param-reassign
     config.resolve.plugins = [
       ...(config.resolve.plugins || []),

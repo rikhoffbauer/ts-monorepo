@@ -13,10 +13,10 @@
     "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
-    "@nighttrax/foo": "~1.0.0"
+    "@nighttrax/foo": "workspace:*"
   },
   "devDependencies": {
-    "rimraf": "~4.4.0",
+    "rimraf": "~6.0.0",
     "typescript": "~4.9.0"
   }
 }

@@ -7,14 +7,14 @@
     "test": "jest"
   },
   "dependencies": {
-    "@nighttrax/foo": "*"
+    "@nighttrax/foo": "workspace:*"
   },
   "devDependencies": {
-    "@babel/core": "~7.21.0",
-    "@babel/preset-env": "~7.20.0",
-    "@babel/preset-typescript": "~7.21.0",
+    "@babel/core": "~7.26.0",
+    "@babel/preset-env": "~7.26.0",
+    "@babel/preset-typescript": "~7.26.0",
     "@types/jest": "~29.5.0",
     "babel-plugin-module-resolver": "~5.0.0",
-    "jest": "~29.5.0"
+    "jest": "~29.7.0"
   }
 }
